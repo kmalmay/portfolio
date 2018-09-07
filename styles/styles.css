@@ -1,0 +1,602 @@
+/* color and type: -------------
+
+color palette: 
+	light pink:	#F0A2AB rgb(240,162,171)
+	dark pink:	#DD5D6D rgb(221,93,109)
+	blue-green:	#1A3E57 rgb(26,62,87)
+	black:		#1C191D rgb(28,25,29)
+	grey:	#464646 rgb(70,70,70)
+
+fonts:	playfair display - title, intro, h3 and h4 headings, button text
+		font-family: 'Playfair Display', serif;
+
+		lato - nav items (except home), h2 headings, fig descriptions, p
+		font-family: 'Lato', sans-serif;
+------------------------------*/
+
+
+/* CSS Reset
+------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+/* Global Styles
+------------------------------*/
+main {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2rem;
+	color: rgb(255,255,255);
+	font-weight: 300;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: rgb(28,25,29);
+	padding-top: 20%;
+}
+
+h2:first-of-type {
+	padding-top: 10%;
+}
+
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2rem;
+	clear: both;
+	color: rgb(28,25,29);
+}
+
+h4 {
+	font-family: 'Playfair Display', serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgb(28,25,29); 
+}
+
+p, .nav-item {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	color: rgb(28,25,29);
+}
+
+a {
+	text-decoration: none;
+	font-size: 1rem;	
+}
+
+/*a:hover {
+	font-weight: normal;
+}*/
+
+.support-txt {
+	font-weight: 200;
+}
+
+button {
+	font-family: 'Playfair Display', serif;
+	background-color: rgba(26,62,87,0.9);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(70,70,70);
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color: rgba(26,62,87,0.75);
+}
+
+b {
+	font-weight: 700;
+}
+
+
+/* Header
+------------------------------*/
+
+/*-------Nav--------*/
+
+nav {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(255,255,255);
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: 10;
+}
+
+.title {
+	display: inline;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title a {
+	font-size: 1rem;
+	color: rgb(221,93,109);
+}
+
+.title a:hover, .title a:active {
+	color: rgb(240,162,171);
+}
+
+#nav-links {
+	float: right;
+}
+
+.nav-item {
+	display: inline;
+	margin-left: 1.5rem;
+}
+
+.nav-item a, .social-item a, #about-me-txt a {
+	color: rgb(221,93,109);
+	text-decoration: none;
+	position: relative;
+	padding-bottom: 0.5rem;
+}
+
+.nav-item a:before, .social-item a:before, #about-me-txt a:before {
+	content: "";
+ 	position: absolute;
+  	width: 100%;
+  	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(70,70,70);
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover:before, .social-item a:hover:before, #about-me-txt a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*------Intro-------*/
+
+
+header {
+	background-color: rgba(26,62,87,0.9);
+	text-align: center;
+	/*width: auto;
+	height: 80vh;*/
+	margin: 0 5% 0 5%;
+}
+
+header h1 {
+	padding: 16rem 0;
+}
+
+/* Some of My Work
+------------------------------*/
+
+hr{
+	margin-top: -0.3rem;
+	border: 1px solid rgb(26,62,87); /*blue-green*/
+	display: none;
+}
+
+hr:first-of-type {
+	border: 1px solid rgb(240,162,171); /*light pink*/
+	display: block;
+}
+
+#work {
+	margin-top: 5rem;
+}
+
+#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.project-tile {
+	max-width: 47%;
+	min-width: 256px;
+	padding: 0;
+	margin-top: 3rem;
+}
+
+.project-tile-left {
+	margin-right: 2rem;
+}
+
+.project-tile img {
+	height: auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 1px solid rgba(26,62,87, 0.25);
+}
+
+.description-left p {
+	margin-top: 0.5rem;
+	font-weight: bold;
+}
+
+.description-right p {
+	font-size: 0.8rem;
+	/*float: right;
+	margin-top: -1rem;
+	max-width: 8rem;
+	text-align: right;*/
+	line-height: 1.5rem;
+}
+
+
+/* Information
+------------------------------*/
+
+#info-box {
+	border: 1px solid rgb(26,62,87); 
+	padding: 4rem;
+	margin-top: -0.3rem;
+}
+
+#info-box p {
+	line-height: 1.2rem;
+}
+
+/*---------Overview-----------*/
+
+#overview-p {
+	width: 70%;
+	float: left;
+}
+
+#services {
+	float: right;
+	padding-left: 1.5rem;
+}
+
+#services li {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+
+#services h4 {
+	padding-bottom: 1rem;
+}
+
+#services button {
+	margin-top: 1rem;
+	padding: 0.8rem 1rem;
+	width: 8rem;
+}
+
+
+/*---------Process-----------*/
+
+/*#process-bar {
+	float: left;
+	height: 30rem;
+	margin: 3rem 0 0 0;
+}
+
+#process-bar img {
+	height: 100%;
+	width: auto;
+}*/
+
+#process-box {
+	border-right: 1px solid rgb(240,162,171);
+	border-bottom: 1px solid rgb(240,162,171);
+	border-top: 1px solid rgb(240,162,171);
+	width: 90%
+}
+
+#info-box h3 {
+	clear: both;
+	padding-top: 5rem;
+}
+
+.process-phase {
+	margin: 3rem 0 3rem 2rem;
+	width: 85%;
+}
+
+/*---------About Me-----------*/
+
+#about-me {
+	display: flex;
+	flex-direction: row;
+}
+
+#about-me p:first-of-type {
+	margin-top: 1rem;
+}
+
+#about-me img {
+	padding-top: 5rem;
+	padding-left: 2rem;
+	height: 200px;
+	width: auto;
+}
+
+
+/* Contact
+------------------------------*/
+#contact-box {
+	background-color: rgba(240,162,171,0.2);
+	border-top: 2px solid rgb(240,162,171);
+	margin-top: -0.3rem;
+	margin-bottom: 7rem;
+	padding: 4rem 1rem 4rem 1rem;
+	text-align: center;
+}
+
+#contact-box p {
+	padding: 2rem 0 1rem 0;
+}
+
+#contact-box button {
+	margin: 2rem 0 3rem 0;
+	padding: 2rem 3rem;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+#contact-box h4 {
+	margin: 2rem 0 1rem 0;
+}
+
+#social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 30%;
+}
+
+.social-item {
+	margin: 0 0.5rem;
+}
+
+/* Footer
+------------------------------*/
+footer {
+	background-color: rgb(26,62,87);
+	text-align: center;
+	margin: 0;
+}
+
+footer p {
+	color: rgb(255,255,255);
+	margin: auto;
+	height: auto;
+	padding: 1rem 0;
+}
+
+/* Media Queries
+------------------------------*/
+/* Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+
+	nav {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	header {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.project-tile-left {
+		margin-right: 2rem;
+	}
+
+	hr {
+		margin-top: -0.3rem;
+		border: 1px solid rgb(26,62,87); /*blue-green*/
+		display: block;
+	}
+
+	hr:first-of-type {
+		border: 1px solid rgb(240,162,171); /*light pink*/
+		display: block;
+	}
+
+	#overview-p {
+		width: 65%;
+		float: left;
+	}
+
+	#info-box {
+		border: none; 
+		padding: 2rem 0;
+		margin-top: 0;
+	}
+
+	#process-box {
+		border-right: 1px solid rgb(240,162,171);
+		border-bottom: 1px solid rgb(240,162,171);
+		border-top: 1px solid rgb(240,162,171);
+		width: 100%;
+	}
+
+	.process-phase {
+		margin: 3rem 0 3rem 2rem;
+		width: 85%;
+	}
+}
+
+/*Small devices (landscape phones, 604px and up)*/
+@media screen and (max-width: 604px) {
+	/*---font-size changes---*/
+	h1, h3 {
+		font-size: 1.75rem;
+	}
+
+	h2 {
+		font-size: 2.25rem;
+		padding-top: 30%
+	}
+
+	h2:first-of-type {
+		padding-top: 10%;
+	}
+
+	header {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	hr {
+		margin-top: -0.15rem;
+	}
+
+	#projects {
+		justify-content: center;
+	}
+
+	.project-tile {
+		max-width: 100%;
+	}
+
+	.project-tile-left {
+		margin-right: 0;
+	}
+
+	#process-box {
+		border-right: none;
+		border-bottom: 1px solid rgb(240,162,171);
+		border-top: 1px solid rgb(240,162,171);
+		width: 100%;
+	}
+
+	.process-phase {
+		margin: 2rem 0 3rem 0;
+		width: 100%;
+	}
+
+	#info-box h3 {
+		padding-top: 3rem;
+	}
+
+	#overview-p {
+		width: 100%;
+		float: left;
+		clear: both;
+	}
+
+	#services {
+		float: none;
+		padding-left: 0;
+		position: relative;
+	}
+
+	#services h4, ul {
+		display: block;
+		margin: 0;
+		clear: both;
+	}
+
+	#services h4 {
+		padding-left: 0;
+		padding-top: 2rem;
+	}
+
+	#services ul {
+		float: left;
+	}
+
+	#services button {
+		position: absolute;
+		margin-left: 2rem;
+		right: 0;
+		bottom: -1.5rem;
+	}
+
+	#about-me img {
+		display: none;
+	}
+
+	#contact-box p {
+		padding: 3rem 0 1rem 0;
+	}
+
+	#contact-box {
+		margin-left: -5%;
+		margin-right: -5%;
+		margin-bottom: 7rem;
+		margin-top: -0.15rem;
+	}
+}
+
+
+
+/*@media screen and (max-width: 576px) {
+}	*/
+
+
+/*Extra-Small*/
+@media screen and (max-width: 350px) {
+	.project-tile-left {
+		margin-right: 0;
+	}
+}
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--Allows Devices to Load Size of Site Correctly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<!--Font Awesome Icons-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<title>Katie Malmay Portfolio</title>
+	</head>
+
+	<!----------------------------------------------
+		Ideas & Notes:  
+			Add hamburger menu floated right with drop down at mobile size
+
+			Fix my name at top so centered b/t nav links - idea: make my name relative (set as "absolute") to nav (set to "relative") to center it and take it out of flow from other nave links so that it doesn't affect them; and the other links will be floated right.
+			
+			Figure out how to make each work link a pop up window with its own info
+
+			Add section with basic questions to email me directly "if you'd like to go ahead and start the process..."
+			
+			Learn how to build a responsive graphic so that I can add my numbered visual in Process Section
+
+			Add image or css shape for process section numbers
+			
+			Learn how to use expand upon click: I want to only show the names of each phase under Process on mobile and maybe tablet, but I want it to have a drop down arrow next to it, and when you click it, it expands to show the information for the phase
+			
+			Add some kind of interactive animation to header so that user can interact with it to scroll down to "work" section
+
+			Once github is up and running, swap FCC link for github profile.
+	----------------------------------------------->
+
+	<body id="home">
+		<nav id="navbar">
+			<div id="nav-links">
+				<p class="nav-item support-txt"><a href="#work">Work</a></p>
+				<p class="nav-item support-txt"><a href="#info">Info</a></p>
+				<p class="nav-item support-txt" id="nav-right-contact"><a href="#contact">Contact</a></p>
+			</div>
+			<div>
+				<p class="title support-txt"><a href="#home">Katie Malmay</a></p>
+			</div>
+		</nav>
+		
+		<header id="welcome-section">
+			<h1>design & development</h1>
+		</header>
+		<main>
+			<!------------------------------------------
+				Some of My Work
+			-------------------------------------------->
+			<h2 id="work">Some of My Work.</h2>
+			<hr>
+			<div id="projects">
+				<div class="project-tile project-tile-left">
+					<a href="https://codepen.io/katiebug72/full/WKBwKm/" target="_blank">
+						<img src="assets/work/min-files/gallery-landing page-min.png" title="The Gallery" alt="gallery landing page">
+					<a>
+					<div class="description-left"><p>The Gallery Landing Page</p></div>
+					<div class="description-right"><p>UI&#x2F;UX, Web Design, Web Development</p></div>
+				</div>
+				<div class="project-tile">
+					<a href="https://codepen.io/katiebug72/full/mjwVKJ/" target="_blank">
+						<img src="assets/work/min-files/busch-gardens-survey-min.png" title="Busch Gardens Survey" alt="busch gardens survey">
+					</a>
+					<div class="description-left"><p>Survey Form</p></div>
+					<div class="description-right"><p>UI&#x2F;UX, Web Design, Web Development</p></div>
+				</div>
+				<div class="project-tile project-tile-left">
+					<a href="https://codepen.io/katiebug72/full/erJyrP/" target="_blank">
+						<img src="assets/work/min-files/horizons-signup-page-min.png" title="horizons yoga landing page" alt="Horizons Yoga Landing Page">
+					</a>
+					<div class="description-left"><p>Horizons Yoga Landing Page</p></div>
+					<div class="description-right"><p>UI&#x2F;UX, Web Design, Web Development</p></div>
+				</div>
+				<div class="project-tile">
+					<a href="https://codepen.io/katiebug72/full/jpgJqX/" target="_blank">
+						<img src="assets/work/min-files/css-technical-doc-min.png" title="CSS Technical Document" alt="css technical document">
+					</a>
+					<div class="description-left"><p>CSS Technical Document</p></div>
+					<div class="description-right"><p>Web Design, Web Development</p></div>
+				</div>
+				<div class="project-tile project-tile-left">
+					<a href="https://www.behance.net/gallery/68204931/Daily-UI-004-Calculator" target="_blank">
+						<img src="assets/work/min-files/dailyui_calculator-portfolio-min.png" title="Calculator Concept" alt="calculator concept">
+					</a>
+					<div class="description-left"><p>Calculator Concept</p></div>
+					<div class="description-right"><p>UI&#x2F;UX</p></div>
+				</div>
+				<div class="project-tile">
+					<a href="https://www.behance.net/gallery/65996463/Sign-Up-Page" target="_blank">
+						<img src="assets/work/min-files/dailyui001-signup-portfolio-img-min.png" title="Sign Up Page" alt="sign up page">
+					</a>
+					<div class="description-left"><p>Sign Up Page</p></div>
+					<div class="description-right"><p>UI&#x2F;UX, Web Design</p></div>
+				</div>
+				<div class="project-tile project-tile-left">
+					<a href="https://www.behance.net/gallery/65997583/Credit-Card-Checkout" target="_blank">
+						<img src="assets/work/min-files/dailyui002-CreditCardCheckout-portfolio-min.png" title="Payment Checkout" alt="payment checkout">
+					</a>
+					<div class="description-left"><p>Payment Checkout</p></div>
+					<div class="description-right"><p>UI&#x2F;UX, Web Design</p></div>
+				</div>
+			</div>
+
+			<!------------------------------------------
+				Information
+			-------------------------------------------->
+			<h2 id="info">Information.</h2>
+			<hr>
+			<div id="info-box">
+				<div id="overview-p">
+					<p>I want to work with you to create a digital product that creates an intuitive and elegant user experience for your audience. I prioritize usability and accessibility to ensure that users are provided a similar experience across devices and browsers, and I utilize responsive design techniques to keep your site looking great at all sizes.</p>
+				</div>
+				<div id="services">
+					<h4>Services</h4>
+					<ul>
+						<li class="support-txt">User Interface Design</li>
+						<li class="support-txt">Web Design</li>
+						<li class="support-txt">Front End Development</li>
+					</ul>
+					<button>Download My Resume</button>
+				</div>
+				<h3 id="process">The Process</h3>
+				<div id="process-box">
+					<!-- <div id="process-bar">
+						<img src="assets/other-imgs/process-bar.png">
+					</div> -->
+					<div id="exploration" class="process-phase">
+						<p><b>Exploration: </b> This phase of the project is all about setting up for success. To start off, you'll fill out a brief questionnaire so that I can get a feel for your project needs. It’ll take no more than 5 minutes, but will give me an idea of what you’re looking for.</p>
+						<br>
+						<p>After I’ve reviewed the questionnaire, we’ll chat about your project goals, brand, and any other information related to your project. I’ll send you an agreement outlining the details we’ve discussed, and I will revise it as necessary to ensure we’re both on the same page. Once the agreement is signed and squared away, we’ll get started!</p>
+					</div>
+					<div id="creation" class="process-phase">
+						<p><b>Creation: </b> In this phase I’ll dive into creating the project. I’ll begin by conducting my own research and using information from our discussions in the exploration phase to produce visuals that relay the look and feel of the future product. Then, I will begin creating a design.</p>
+						<br>
+						<p>Each step of the way I will communicate my progress and anything I may need from you to keep the project running smoothly and on time. At the milestones we’ve agreed upon, I will share the design for your feedback. Once we’re happy with the design, I will finalize it and develop the product.</p>
+					</div>
+					<div id="launch-and-follow-up" class="process-phase">
+						<p><b>Launch & Follow Up: </b> The design achieves the goals we set in phase one, it’s functionality has been tested, and we’re ready to launch!</p>
+						<br>
+						<p>Once I launch the site, I will directly send all of the deliverables to you, including images, designs, and anything else discussed in our agreement. These now belong to you, and I’ll answer any questions you have about how to store or use the files in the future.</p>
+						<br>
+						<p>Lastly, I’d love to get project feedback from you so that I can continue to improve my process and my work!</p>
+					</div>
+				</div>
+				<div id="about-me">
+					<div id="about-me-txt">
+						<h3>A Little About Me</h3>
+						<p>I enjoy solving problems with creative solutions, which has made front-end development and digital design the perfect way to spend my energy. While I have some background in art and design, I am teaching myself the digital side of things. It’s turned out to be such an amazing fit, that my spare time often becomes more design and development time! When I’m not designing or developing, I enjoy hiking, trail running, listening podcasts, and traveling.</p>
+						<br>
+						<p>If you want to see what I’m up to, you can check out my <a href="https://www.instagram.com/katiemalmay/" target="_blank">instagram</a> feed.</p>
+					</div>
+					<img src="assets/other-imgs/portrait-color-sm-min.jpg" alt="bio photo" title="Bio Photo">
+				</div>
+			</div>
+			<!------------------------------------------
+				Contact
+			-------------------------------------------->
+			<h2 id="contact">Contact.</h2>
+			<div id="contact-box">
+				<h3>Great projects start with great conversations.</h3>
+				<p class="support-txt">If you have a project idea, or just want to introduce yourself, shoot me an email.</p>
+				<a href="mailto:katie.malmay@gmail.com">
+					<button>Email Me</button>
+				</a>
+				<h4>Social</h4>
+				<div id="social">
+					<p class="social-item support-txt"><a href="https://www.behance.net/katiemalmab370" target="_blank">Behance</a></p>
+					<p class="social-item support-txt"><a href="https://www.linkedin.com/in/katiemburroughs/" target="_blank">LinkedIn</a></p>
+					<p class="social-item support-txt"><a href="https://twitter.com/katiemalmay" target="_blank">Twitter</a></p>
+					<p class="social-item support-txt"><a href="https://www.freecodecamp.org/kmalmay" target="_blank" id="profile-link">FreeCodeCamp</a></p>
+				</div>
+			</div>
+		</main>
+		<!------------------------------------------
+			Footer
+		-------------------------------------------->
+		<footer>
+			<p class="support-txt">&copy; 2018 Katie Malmay</p>
+		</footer>
+	</body>
+
+</html>
+	
