@@ -140,11 +140,12 @@ b {
 nav {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: rgba(255,255,255);
+	background-color: rgb(255,255,255);
 	padding-left: 5%;
 	padding-right: 5%;
 	z-index: 10;
@@ -171,8 +172,12 @@ nav {
 
 .nav-item {
 	display: inline;
-	margin-left: 1.5rem;
 }
+
+.nav-item:not(:last-child) {
+	margin-right: 1.5rem;
+}
+
 
 .nav-item a, .social-item a, #about-me-txt a {
 	color: rgb(221,93,109);
