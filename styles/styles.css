@@ -179,14 +179,14 @@ nav {
 }
 
 
-.nav-item a, .social-item a, #about-me-txt a {
+.nav-item a, .social-item a, #about-me-txt a, #intake-form a {
 	color: rgb(221,93,109);
 	text-decoration: none;
 	position: relative;
 	padding-bottom: 0.5rem;
 }
 
-.nav-item a:before, .social-item a:before, #about-me-txt a:before {
+.nav-item a:before, .social-item a:before, #about-me-txt a:before, #intake-form a:before {
 	content: "";
  	position: absolute;
   	width: 100%;
@@ -201,7 +201,7 @@ nav {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-item a:hover:before, .social-item a:hover:before, #about-me-txt a:hover:before {
+.nav-item a:hover:before, .social-item a:hover:before, #about-me-txt a:hover:before, #intake-form a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -388,15 +388,19 @@ hr:first-of-type {
 	padding: 2rem 0 1rem 0;
 }
 
+#contact-box #intake-form {
+	padding-top: 0;
+}
+
 #contact-box button {
-	margin: 2rem 0 3rem 0;
+	margin: 2rem 0 1rem 0;
 	padding: 2rem 3rem;
 	font-size: 1rem;
 	letter-spacing: 1px;
 }
 
 #contact-box h4 {
-	margin: 2rem 0 1rem 0;
+	margin: 3rem 0 1rem 0;
 }
 
 #social {
