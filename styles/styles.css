@@ -212,13 +212,16 @@ nav {
 
 
 header {
+	
+}
+
+#home-page-cover {
 	background: url("../assets/other-imgs/portfolio-header-orig.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 	height: 91vh;
 	position: relative;
-	/* margin: 0 5% 0 5%; */
 }
 
 .header-layer {
