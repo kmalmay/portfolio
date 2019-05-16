@@ -212,11 +212,22 @@ nav {
 
 
 header {
-	background-color: rgba(26,62,87,0.9);
+	background: url("../assets/other-imgs/portfolio-header-orig.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
-	/*width: auto;
-	height: 80vh;*/
-	margin: 0 5% 0 5%;
+	height: 91vh;
+	position: relative;
+	/* margin: 0 5% 0 5%; */
+}
+
+.header-layer {
+	background-color: rgba(26,62,87,0.9);
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 header h1 {
@@ -292,17 +303,17 @@ hr:first-of-type {
 }
 
 #info-box p {
-	line-height: 1.2rem;
+	line-height: 1.5rem;
 }
 
 /*---------Overview-----------*/
 
 #overview-p {
-	width: 70%;
+	width: auto;
 	float: left;
 }
 
-#services {
+/* #services {
 	float: right;
 	padding-left: 1.5rem;
 }
@@ -321,7 +332,7 @@ hr:first-of-type {
 	margin-top: 1rem;
 	padding: 0.8rem 1rem;
 	width: 8rem;
-}
+} */
 
 
 /*---------Process-----------*/
@@ -337,7 +348,7 @@ hr:first-of-type {
 	width: auto;
 }*/
 
-#process-box {
+#skills-box {
 	border-right: 1px solid rgb(240,162,171);
 	border-bottom: 1px solid rgb(240,162,171);
 	border-top: 1px solid rgb(240,162,171);
@@ -349,9 +360,18 @@ hr:first-of-type {
 	padding-top: 5rem;
 }
 
-.process-phase {
+.skill-section {
 	margin: 3rem 0 3rem 2rem;
 	width: 85%;
+}
+
+.skill-heading {
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.skill-list-item {
+	display: inline;
 }
 
 /*---------About Me-----------*/
@@ -478,14 +498,14 @@ footer p {
 		margin-top: 0;
 	}
 
-	#process-box {
+	#skills-box {
 		border-right: 1px solid rgb(240,162,171);
 		border-bottom: 1px solid rgb(240,162,171);
 		border-top: 1px solid rgb(240,162,171);
 		width: 100%;
 	}
 
-	.process-phase {
+	.skill-section {
 		margin: 3rem 0 3rem 2rem;
 		width: 85%;
 	}
@@ -529,14 +549,14 @@ footer p {
 		margin-right: 0;
 	}
 
-	#process-box {
+	#skills-box {
 		border-right: none;
 		border-bottom: 1px solid rgb(240,162,171);
 		border-top: 1px solid rgb(240,162,171);
 		width: 100%;
 	}
 
-	.process-phase {
+	.skill-section {
 		margin: 2rem 0 3rem 0;
 		width: 100%;
 	}
