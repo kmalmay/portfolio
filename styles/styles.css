@@ -241,14 +241,14 @@ header h1 {
 
 .cs-header h1 {
 	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-bottom: 8rem;
 	color: black;
 	text-align: center;
 }
 
 
 
-/* Some of My Work
+/* Home: Some of My Work
 ------------------------------*/
 
 hr{
@@ -304,6 +304,17 @@ hr:first-of-type {
 	max-width: 8rem;
 	text-align: right;*/
 	line-height: 1.5rem;
+}
+
+/* CS Styles Main
+------------------------------*/
+
+.case-study-main-img {
+	width: 30%;
+}
+
+.case-study-summary {
+
 }
 
 
