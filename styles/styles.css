@@ -231,7 +231,7 @@ nav {
 }
 
 header h1 {
-	padding: 16rem 0;
+	padding-top: 42vh;
 }
 
 
@@ -240,10 +240,14 @@ header h1 {
 ------------------------------*/
 
 .cs-header h1 {
-	padding-top: 5rem;
-	padding-bottom: 8rem;
+	padding-top: 8rem;
 	color: black;
 	text-align: center;
+}
+
+.cs-header hr {
+	margin-top: -0.1rem;
+	width: 85%;
 }
 
 
