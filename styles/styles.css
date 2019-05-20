@@ -179,14 +179,14 @@ nav {
 }
 
 
-.nav-item a, .social-item a, #about-me-txt a, #intake-form a {
+.underline-effect {
 	color: rgb(221,93,109);
 	text-decoration: none;
 	position: relative;
 	padding-bottom: 0.5rem;
 }
 
-.nav-item a:before, .social-item a:before, #about-me-txt a:before, #intake-form a:before {
+.underline-effect:before {
 	content: "";
  	position: absolute;
   	width: 100%;
@@ -201,7 +201,7 @@ nav {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-item a:hover:before, .social-item a:hover:before, #about-me-txt a:hover:before, #intake-form a:hover:before {
+.underline-effect:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
