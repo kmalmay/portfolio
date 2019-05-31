@@ -179,14 +179,14 @@ nav {
 }
 
 
-.nav-item a, .social-item a, #about-me-txt a, #intake-form a {
+.underline-effect {
 	color: rgb(221,93,109);
 	text-decoration: none;
 	position: relative;
 	padding-bottom: 0.5rem;
 }
 
-.nav-item a:before, .social-item a:before, #about-me-txt a:before, #intake-form a:before {
+.underline-effect:before {
 	content: "";
  	position: absolute;
   	width: 100%;
@@ -201,7 +201,7 @@ nav {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-item a:hover:before, .social-item a:hover:before, #about-me-txt a:hover:before, #intake-form a:hover:before {
+.underline-effect:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -211,7 +211,7 @@ nav {
 /*------Intro-------*/
 
 
-header {
+.home-page-cover {
 	background: url("../assets/other-imgs/portfolio-header-orig.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -225,16 +225,17 @@ header {
 	background-color: rgba(26,62,87,0.9);
 	position: absolute;
 	top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 header h1 {
 	padding-top: 42vh;
 }
 
-/* Some of My Work
+
+/* Home: Some of My Work
 ------------------------------*/
 
 hr{
@@ -293,10 +294,11 @@ hr:first-of-type {
 }
 
 
+
 /* Information
 ------------------------------*/
 
-#info-box {
+.border-blue {
 	border: 1px solid rgb(26,62,87); 
 	padding: 4rem;
 	margin-top: -0.3rem;
@@ -608,10 +610,7 @@ footer p {
 	}
 
 	#contact-box {
-		margin-left: -5%;
-		margin-right: -5%;
-		margin-bottom: 7rem;
-		margin-top: -0.15rem;
+		margin: -0.15rem -5% 7rem -5%;
 	}
 }
 
@@ -629,3 +628,115 @@ footer p {
 }
 
 
+/*---------------------------------------------------------------------------------------
+CS PAGE STYLES
+----------------------------------------------------------------------------------------*/
+
+/* CS Header Styles
+------------------------------*/
+.cs-header {
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5vh;
+}
+
+.cs-header h1 {
+	margin-bottom: 4rem;
+	color: rgb(28,25,29);
+	text-align: center;
+}
+
+.border-pink {
+	border: 1px solid rgb(240,162,171); 
+	padding: 4rem;
+	/* margin-top: -0.3rem; */
+}
+
+/* CS Main Styles
+------------------------------*/
+
+.case-study-links-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 4rem;
+	margin-bottom: 4rem;
+}
+
+.case-study-info {
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+}
+
+.case-study-info-img img {
+	display: block;
+	margin: 0 auto 3rem auto;
+	max-width: 100%;
+	max-height:100%;
+}
+
+.cs-h3 {
+	margin: 4rem 0 1rem 0;
+}
+
+.case-study-features p, .case-study-skills p, .case-study-summary p {
+	line-height: 1.5rem;
+}
+
+.case-study-features p:first-of-type, .case-study-skills p:first-of-type {
+	margin-top: 0;
+}
+
+.case-study-summary {
+	background-color: rgba(240,162,171,0.2);
+	border-top: 2px solid rgb(240,162,171);
+	padding: 1rem 3rem 4rem 3rem;
+	margin: -0.15rem -5% 7rem -5%;
+}
+
+.cs-h2 {
+	margin-bottom: 0.15rem;
+}
+
+.summary-h3 {
+	margin: 3rem 0 0 0;
+}
+
+.case-study-summary p {
+	margin-top: 1rem;
+}
+
+/* CS Media Queries
+------------------------------*/
+@media screen and (min-width: 604px) {
+	.case-study-summary {
+		margin-top: -0.3rem;
+		margin: -0.3rem 0 7rem 0;
+	}
+}
+
+/*this size and up*/
+@media screen and (min-width: 768px)  {
+	.case-study-links-container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+	.case-study-link {
+		margin: 0 1rem 0 1rem;
+	}
+
+	.case-study-info-right {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		align-items: space-between;
+	}
+
+	.case-study-skills {
+		max-width: 50%;
+		margin-left: 5%;
+	}
+}
