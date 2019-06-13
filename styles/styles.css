@@ -682,17 +682,29 @@ CS PAGE STYLES
 	margin: 0 auto 3rem auto;
 	max-width: 100%;
 	max-height:100%;
-}	
-
-.cs-h3 {
-	margin: 4rem 0 1rem 0;
 }
 
-.case-study-features p, .case-study-skills p, .case-study-summary p {
+.features-and-skills {
+	text-align: center;
+}
+
+.features-and-skills p {
+	padding: 0.5rem 0;
+}
+
+.features-section, .skill-section {
+	
+}
+
+.cs-h3 {
+	padding: 4rem 0 1rem;
+}
+
+.features-section p, .skills-section p, .case-study-summary p {
 	line-height: 1.5rem;
 }
 
-.case-study-features p:first-of-type, .case-study-skills p:first-of-type {
+.features-section p:first-of-type, .skills-section p:first-of-type {
 	margin-top: 0;
 }
 
@@ -736,15 +748,17 @@ CS PAGE STYLES
 		margin: 0 1rem 0 1rem;
 	}
 
-	.case-study-info-right {
-		box-sizing: border-box;
+	.features-and-skills {
+		height: 90vh;
 		display: flex;
 		flex-direction: row;
-		align-items: space-between;
+		align-items: center;
+		border: solid black;
 	}
 
-	.case-study-skills {
+	.skills-section {
 		max-width: 50%;
 		margin-left: 5%;
+		border: solid black;
 	}
 }
