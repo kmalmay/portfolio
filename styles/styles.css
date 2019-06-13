@@ -638,19 +638,27 @@ CS PAGE STYLES
 	box-sizing: border-box;
 	padding-left: 5%;
 	padding-right: 5%;
-	margin-top: 8vh;
+	margin-top: 3vh;
 }
 
 .cs-header h1 {
 	margin-bottom: 4rem;
-	color: rgb(28,25,29);
 	text-align: center;
+	line-height: 150%;
 }
 
 .border-pink {
 	border: 1px solid rgb(240,162,171); 
 	padding: 4rem;
 	/* margin-top: -0.3rem; */
+}
+
+.bg-blue {
+	background-color: rgb(26,62,87);
+	padding: 6rem;
+	margin-top: -0.3rem;
+	margin-left: -5.5%;
+	margin-right: -5.5%;
 }
 
 /* CS Main Styles
