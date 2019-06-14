@@ -686,6 +686,9 @@ CS PAGE STYLES
 
 .features-and-skills {
 	text-align: center;
+	margin-bottom: 10rem;
+	margin-top: 10rem;
+	border: solid black;
 }
 
 .features-and-skills p {
@@ -693,11 +696,15 @@ CS PAGE STYLES
 }
 
 .features-section, .skill-section {
-	
+	border: solid black;
+}
+
+.skills-section {
+	padding-bottom: 10rem;
 }
 
 .cs-h3 {
-	padding: 4rem 0 1rem;
+	padding: 10rem 0 1rem;
 }
 
 .features-section p, .skills-section p, .case-study-summary p {
@@ -749,7 +756,7 @@ CS PAGE STYLES
 	}
 
 	.features-and-skills {
-		height: 90vh;
+		/* height: 90vh; */
 		display: flex;
 		flex-direction: row;
 		align-items: center;
