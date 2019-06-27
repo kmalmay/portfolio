@@ -238,6 +238,7 @@ header h1 {
 /* Home: Some of My Work
 ------------------------------*/
 
+.hr-home{
 	margin-top: -0.3rem;
 	border: 1px solid rgb(26,62,87); /*blue-green*/
 	display: none;
@@ -680,12 +681,39 @@ CS PAGE STYLES
 	display: block;
 	margin: 0 auto 3rem auto;
 	max-width: 100%;
-	max-height:100%;
+	max-height: 100%;
+}
+
+.horizontal-zig-zag {
+	text-align: center;
+	height: 2rem;
+	position: relative;
+}
+
+.horizontal-zig-zag img {
+	height: auto;
+	max-width: 50%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	opacity: 0.75;
+}
+
+.horizontal-zig-zag-top {
+	margin: 10rem auto 5rem;
+}
+
+.horizontal-zig-zag-bottom {
+	margin: 5rem auto 10rem;
 }
 
 .features-and-skills {
 	text-align: center;
-	margin: 10rem auto 6rem;
+	margin: 2rem auto;
+	border: solid black;
 }
 
 .features-and-skills p {
@@ -761,8 +789,8 @@ CS PAGE STYLES
 	}
 }
 
-/*768px width and up*/
-@media screen and (min-width: 768px)  {
+/*769px width and up - anything larger than ipad*/
+@media screen and (min-width: 769px)  {
 	.case-study-links-container {
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -775,6 +803,11 @@ CS PAGE STYLES
 
 	.features-and-skills {
 		display: flex;
+		margin: 10rem auto 6rem;
+	}
+
+	.horizontal-zig-zag {
+		display: none;
 	}
 
 	.features-section, .skills-section {
@@ -788,7 +821,8 @@ CS PAGE STYLES
 	}
 
 	.vertical-zig-zag img {
-		max-width: 60%;
+		height: auto;
+		max-width: 30%;
+		opacity: 0.75;
 	}
-
 }
