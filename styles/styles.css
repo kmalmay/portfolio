@@ -238,13 +238,12 @@ header h1 {
 /* Home: Some of My Work
 ------------------------------*/
 
-hr{
 	margin-top: -0.3rem;
 	border: 1px solid rgb(26,62,87); /*blue-green*/
 	display: none;
 }
 
-hr:first-of-type {
+.hr-home:first-of-type {
 	border: 1px solid rgb(240,162,171); /*light pink*/
 	display: block;
 }
@@ -478,13 +477,13 @@ footer p {
 		margin-right: 2rem;
 	}
 
-	hr {
+	.hr-home {
 		margin-top: -0.3rem;
 		border: 1px solid rgb(26,62,87); /*blue-green*/
 		display: block;
 	}
 
-	hr:first-of-type {
+	.hr-home:first-of-type {
 		border: 1px solid rgb(240,162,171); /*light pink*/
 		display: block;
 	}
@@ -535,7 +534,7 @@ footer p {
 		width: 100%;
 	}
 
-	hr {
+	.hr-home {
 		margin-top: -0.15rem;
 	}
 
@@ -672,12 +671,12 @@ CS PAGE STYLES
 	margin-bottom: 4rem;
 }
 
-.case-study-info {
+/* .case-study-info {
 	box-sizing: border-box;
 	margin-bottom: 2rem;
-}
+} */
 
-.case-study-info-img img {
+.case-study-img img {
 	display: block;
 	margin: 0 auto 3rem auto;
 	max-width: 100%;
@@ -686,26 +685,35 @@ CS PAGE STYLES
 
 .features-and-skills {
 	text-align: center;
-	margin: 10rem auto;
-	/* margin-top: 10rem; */
-	border: solid black;
+	margin: 10rem auto 6rem;
 }
 
 .features-and-skills p {
 	padding: 0.5rem 0;
+	overflow: hidden;
 }
 
-.features-section, .skill-section {
-	border: solid black;
+.features-section, .skills-section {
+	padding: 5rem 0 3rem;
+	position: relative;
 }
 
-.skills-section {
-	/* padding-bottom: 10rem; */
+.diamond-bg {
+	background-image: url(../assets/features-diamond.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	left: 0;
+	right:0;
+	margin: auto;
+	top: 13%;
+	min-height: 30%;
+	z-index: -1;
 }
 
-/* .cs-h3 {
-	padding: 10rem 0 1rem;
-} */
+.cs-h3 {
+	margin: 0 0 1.5rem;
+}
 
 .features-section p, .skills-section p, .case-study-summary p {
 	line-height: 1.5rem;
@@ -713,6 +721,16 @@ CS PAGE STYLES
 
 .features-section p:first-of-type, .skills-section p:first-of-type {
 	margin-top: 0;
+}
+
+.hr-features-and-skills {
+	margin-top: 2rem;
+	border: 1px solid rgb(26,62,87);
+	width: 7%;
+}
+
+.vertical-zig-zag {
+	display: none;
 }
 
 .case-study-summary {
@@ -756,24 +774,21 @@ CS PAGE STYLES
 	}
 
 	.features-and-skills {
-		/* display: flex; */
-		border: solid black;
-		overflow: hidden;
+		display: flex;
 	}
 
-	.features-section {
-		float: left;
-		width: 50%;
-		box-sizing: border-box;
-	}
-	.skills-section {
-		float: right;
+	.features-section, .skills-section {
 		width: 50%;
 		box-sizing: border-box;
 	}
 
-	.skills-section {
-		/* max-width: 50%; */
-		border: solid black;
+	.vertical-zig-zag {
+		display: inline;
+		margin: auto;
 	}
+
+	.vertical-zig-zag img {
+		max-width: 60%;
+	}
+
 }
