@@ -684,6 +684,10 @@ CS PAGE STYLES
 	max-height: 100%;
 }
 
+.case-study-summary .case-study-img img {
+	margin: 2.5rem auto 2.5rem;
+}
+
 .the-main-points {
 	margin-top: 6rem;
 }
@@ -781,6 +785,10 @@ CS PAGE STYLES
 
 .the-main-points p, .case-study-summary p {
 	margin-top: 1rem;
+}
+
+.case-study-summary h4 {
+	margin-top: 2.5rem;
 }
 
 .initial-proj-needs ul {
