@@ -684,6 +684,10 @@ CS PAGE STYLES
 	max-height: 100%;
 }
 
+.the-main-points {
+	margin-top: 6rem;
+}
+
 .horizontal-zig-zag {
 	text-align: center;
 	height: 2rem;
@@ -703,11 +707,11 @@ CS PAGE STYLES
 }
 
 .horizontal-zig-zag-top {
-	margin: 10rem auto 1rem;
+	margin: 7rem auto 1rem;
 }
 
 .horizontal-zig-zag-bottom {
-	margin: 1rem auto 10rem;
+	margin: 1rem auto 7rem;
 }
 
 .features-and-skills {
@@ -742,7 +746,7 @@ CS PAGE STYLES
 	margin: 0 0 1.5rem;
 }
 
-.features-section p, .skills-section p, .case-study-summary p {
+.the-main-points p, .features-section p, .skills-section p, .case-study-summary p{
 	line-height: 1.5rem;
 }
 
@@ -775,8 +779,19 @@ CS PAGE STYLES
 	margin: 3rem 0 0 0;
 }
 
-.case-study-summary p {
+.the-main-points p, .case-study-summary p {
 	margin-top: 1rem;
+}
+
+.initial-proj-needs ul {
+	margin-top: 0.5rem;
+	list-style-type: disc;
+}
+
+.initial-proj-needs li {
+	margin-left: 2rem;
+	line-height: 1.5rem;
+	font-family: Lato;
 }
 
 /* CS Media Queries
