@@ -105,10 +105,10 @@
                 <p><b>Dancing Script:</b> This is a playful, approachable script font. Because it has a big personality I used it sparingly, just for the main heading and once more to highlight the main pricing plan. Dancing Script has the feel of movement and excitement that matches the mood the brand should convey.</p>
                 <p><b>Lato:</b> Lato is a great offset to Dancing Script with its familiar, straightforward feel. With an audience of families and couples, this is a great font to add a sense of ease and familiarity. In addition, it’s very easy to read as a body text. Simply changing the weight of Lato to 300 for headings visually sets it apart to better create a sense of hierarchy, induces a more polished and sleek feel, and still matches it’s 400 weight body text counterpart.</p>
                 <h4>Color Palette</h4>
-                <p>I chose bright colors to convey a fun and happy exciting mood, but toned it down with a dark overlay in the header and footer temper the bright colors and tie them to a feel of stability and professionalism. The brand uses a complementary color scheme to create more contrast and a more energetic mood.</p>
                 <div class="case-study-img">
-                    <img src="assets/work/gallery-cs/gallery-color-palette-sm.png" alt="project color palette">
+                    <img class="color-palette-img" src="assets/work/gallery-cs/gallery-color-palette-sm.png" alt="project color palette">
                 </div>
+                <p>I chose bright colors to convey a fun and happy exciting mood, but toned it down with a dark overlay in the header and footer temper the bright colors and tie them to a feel of stability and professionalism. The brand uses a complementary color scheme to create contrast and an energetic mood.</p>
                 <p>Next, I brainstormed page sections and elements that should be included. Some things I knew would need were:</p>
                 <div class="initial-proj-needs">
                     <ul>
@@ -133,20 +133,21 @@
                 <p>While designing landing page in Adobe XD, I ensured consistency in font sizing and heading usage so that when I coded it, I would not have to guess sizes. I also made sure that the various headings used consistent colors from the palette.</p>
                 <p>After initially coding the project (HTML5 & CSS3) I posted it for feedback on the FreeCodeCamp forum where I got a lot of great recommendations and questions. During this testing process, I continued making changes to the landing page based on feedback from people reviewing the page. Then I would request further feedback. This process continued for a couple of days until I felt that the result accurately answered the project goals.</p>
                 <h3 class="summary-h3">Challenges</h3>
-                <h4>Font Weight Aesthetics vs. Accessibility</h4>
+                <h4 class="decreased-padding-top">Font Weight Aesthetics vs. Accessibility</h4>
                 <p>In my original design, I wanted links in Lato to be a thin font weight to offset the heaviness of Dancing Script. What I hadn’t considered was that while I am designing, I typically turn up my computer brightness to 75% or higher. Also, I have good vision. These two factors influenced my perception of the design’s contrast and readability.</p>
                 <p>When I posted the webpage for others to test out, several people mentioned the font weight of the navigation and footer text being too small or too thin to read. These comments and further testing in mobile browsers led me to change the font weight of the links from 300 to 400 (normal). The navigation links are now easier to read and stand out more clearly against the dark background of the navigation area. I left the copyright in the 300 font weight as it’s typically added in smaller text and isn’t meant to be read at any length.</p>
                 <p>I learned a couple of lessons from this experience. The first is to pay attention to my testers’ concerns, even when I think the solution isn’t quite aesthetically what I’m looking for. The second lesson is to try to create less than perfect conditions when I’m testing the design and see if the current design decisions still hold up. Had I tested the design on my phone with my usual 50% backlighting (or less), I would have seen that the text was difficult to read.</p>
                 <h4>Submit Button Styling Overrides</h4>
                 <p>Another challenge I came across was that the submit button (which is technically an <code>&lt;input&gt;</code> element, not a <code>&lt;button&gt;</code>) did not appear as styled on mobile or tablet devices. I tested across browsers on desktop (Chrome, Firefox and Safari), including device mode testing in the Chrome DevTools. All of the versions showed the submit button styled correctly. It wasn’t until I pushed my merged my branch to the master on GitHub and actually viewed the page live on mobile that I noticed the submit button was not styled correctly.</p>
-                <p>After much Googling and reading I came across a thread on Stack Overflow where someone else had the exact problem I was having. The solution is simply adding to my CSS:</p>
+                <p>After much Googling and reading I came across a 
+                    <a href="https://stackoverflow.com/questions/5438567/css-submit-button-weird-rendering-on-ipad-iphone" class="underline-effect">thread</a> on Stack Overflow where someone else had the exact problem I was having. The solution is simply adding to my CSS:</p>
                 <br>
                 <div class="code-block">
                     <code>
                         input { <br> -webkit-appearance: none;<br> -moz-appearance: none;<br> appearance: none;<br> }
                     </code>
                 </div>
-                <p>It took me a couple of tries to get it. I only added the webkit bit first to see what would happen. It only solved the problem on Chrome’s mobile browser. Safari was still missing the styling. However, once I added all three lines to the CSS—problem solved.</p>
+                <p>I only added the webkit line first to see what would happen, and it only solved the problem on Chrome’s mobile browser. Once I added all three lines to the CSS—problem solved.</p>
                 <p>This isn’t an issue I’ve come across before, but I know I’ll definitely see it again. I learned that, while using the Chrome DevTools is very helpful, it’s not a perfect replica of what you will see on different devices. Next time, I’ll consult the actual devices sooner to weed out any specifics in the OS that might affect how the design is rendered. I’ve also reframed my expectations to note that regardless of pre launch testing, things will likely go wrong after going live. Now, I will anticipate this and continue tweaking after going live.</p>
             </div>
             

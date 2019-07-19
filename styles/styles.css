@@ -647,10 +647,6 @@ CS PAGE STYLES
 	line-height: 150%;
 }
 
-.case-study-summary h3 h4:first-of-type {
-	margin-top: 0rem;
-}
-
 .border-pink {
 	border: 1px solid rgb(240,162,171); 
 	padding: 4rem;
@@ -775,7 +771,7 @@ CS PAGE STYLES
 .case-study-summary {
 	background-color: rgba(240,162,171,0.2);
 	border-top: 2px solid rgb(240,162,171);
-	padding: 1rem 3rem 4rem 3rem;
+	padding: 1rem 5% 4rem;
 	margin: -0.15rem -5% 7rem -5%;
 }
 
@@ -806,6 +802,10 @@ code {
 	margin-top: 2.5rem;
 }
 
+.case-study-summary .decreased-padding-top {
+	margin-top: 2rem;
+}
+
 .initial-proj-needs ul {
 	margin-top: 0.5rem;
 	list-style-type: disc;
@@ -823,6 +823,15 @@ code {
 	.case-study-summary {
 		margin-top: -0.3rem;
 		margin: -0.3rem 0 7rem 0;
+	}
+
+	.case-study-img .color-palette-img {
+		max-width: 60%;
+	}
+
+	.wireframes-wrapper .case-study-img img {
+		max-height: 500px;
+		width: auto;
 	}
 }
 
@@ -861,5 +870,25 @@ code {
 		height: auto;
 		max-width: 30%;
 		opacity: 0.75;
+	}
+
+	.case-study-img .color-palette-img {
+		width: 40%;
+		max-width: 400px;
+	}
+
+	.color-palette-img {
+		float: right;
+		padding: 0 0 0 2rem;
+	}
+
+	.wireframes-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: auto;
+		clear: both;
+		max-width: 1000px;
 	}
 }
