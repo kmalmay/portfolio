@@ -647,6 +647,10 @@ CS PAGE STYLES
 	line-height: 150%;
 }
 
+.case-study-summary h3 h4:first-of-type {
+	margin-top: 0rem;
+}
+
 .border-pink {
 	border: 1px solid rgb(240,162,171); 
 	padding: 4rem;
@@ -773,6 +777,17 @@ CS PAGE STYLES
 	border-top: 2px solid rgb(240,162,171);
 	padding: 1rem 3rem 4rem 3rem;
 	margin: -0.15rem -5% 7rem -5%;
+}
+
+code {
+	background-color:#EEEEEE;
+	font-family: Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New';
+}
+
+.code-block {
+	background-color:#EEEEEE;
+	padding: 1.5rem; 
+	line-height: 1.5rem;
 }
 
 .cs-h2 {
