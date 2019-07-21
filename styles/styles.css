@@ -817,6 +817,10 @@ code {
 	font-family: Lato;
 }
 
+.wireframes-wrapper .case-study-img img {
+	border: 1px solid rgba(26,62,87, 0.25);
+}
+
 /* CS Media Queries
 ------------------------------*/
 @media screen and (min-width: 604px) {
@@ -849,7 +853,7 @@ code {
 
 	.features-and-skills {
 		display: flex;
-		margin: 10rem auto 6rem;
+		margin: 8rem auto 3rem;
 	}
 
 	.horizontal-zig-zag {
